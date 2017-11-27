@@ -17,7 +17,7 @@ Livro "${novoLivro.titulo}" adicionado com sucesso!
 <a href="index.html" >Início</a> - <a href="adiciona-livro.jsp" >Adicionar novamente?</a>
 </div>
 </div>
-<c:import url="../../books/rodape.html"/>
+<c:import url="/books/rodape.html"/>
 </div>
 
 </body>

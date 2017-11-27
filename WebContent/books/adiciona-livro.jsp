@@ -11,7 +11,7 @@
 <c:import url="menu.jsp"/>
 <div id="conteudo">
 	<div id="topico-central">
-	<form action="/projeto-books/livros" method="GET">
+	<form action="<c:url value="/livros"/>" method="GET">
 	    <input type="hidden" name="logica" value="AdicionaLivroLogica" />
 		<p>
 		<label>Título:</label>

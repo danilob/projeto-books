@@ -15,8 +15,8 @@
 	</div>
 	<div id="menu">
 		<ul>
-			<li><a href="books/adiciona-livro.jsp">Adicionar</a></li>
-			<li><a href="books/pesquisa-livro.jsp">Pesquisar</a></li>
+			<li><a href="<c:url value="/books/adiciona-livro.jsp" />">Adicionar</a></li>
+			<li><a href="<c:url value="/books/pesquisa-livro.jsp" />">Pesquisar</a></li>
 			<li><a href="/projeto-books/livros?logica=ListaLivroLogica">Listar</a></li>
 		</ul>
 	</div>

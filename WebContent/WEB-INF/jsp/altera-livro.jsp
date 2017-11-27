@@ -16,7 +16,7 @@
 	Alterar conteúdo do ID: "${record.id}"
 	</div>
 	<div id="topico-central">
-	<form action="/projeto-books/livros" method="GET">
+	<form action="livros" method="GET">
 	    <input type="hidden" name="logica" value="AlteraLivroLogica" />
 	    <input type="hidden" name="id" value="${record.id}" />
 	    <p>
@@ -54,7 +54,7 @@
 	</form>
 	</div>
 </div>
-<c:import url="../../books/rodape.html"/>
+<c:import url="/books/rodape.html"/>
 </div>
 </body>
 </html>
