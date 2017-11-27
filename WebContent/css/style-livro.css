@@ -1,0 +1,120 @@
+body{
+		margin: 0;
+		width:100vw;
+                height: 100vh;
+                display: flex;
+		justify-content: center;
+		/* Firefox 3.6+ */
+ 		background-color: white;
+		
+	    }
+	    #header{
+	    float: left;
+	    margin: 20px;
+		width: 700px;
+		height: 150px;
+		background: white; 
+	    }
+	    #principal{
+	        width: 1200px;
+	    }
+	    #menu{
+	         float: left;
+		     width: 400px;
+		     height: 150px;
+
+	    }
+	    #conteudo {
+	         justify-content: center;
+	         margin: 40px;
+	         display: block;
+	         float: left;
+	         width: 1120px;
+	         border: 1px solid #eee;
+
+	    } 
+		#topico-central {
+  			 display: flex;
+  			 align-items: center;
+  			 justify-content: center;
+	    }  
+	    #menu ul li{
+	        border: 1px dashed gray;
+	        text-decoration: none;
+	        display: inline;
+	        margin: 10px;
+	        padding: 10px;
+	        background-color: #ff8300;
+	        color: white;
+	        font-size: 18px;
+	    }
+	    #menu ul li a
+		{ 
+ 			text-decoration:none; 
+ 			color: white;
+	        font-size: 18px;
+		} 
+		#menu ul li a:visited
+		{ 
+ 			text-decoration:none; 
+ 			color: white;
+	        font-size: 18px;
+		}
+	    article section {
+                margin-left: 20px;
+	    }
+	    article h1 {
+               text-align: center;
+	    }
+	    #info{
+	         margin-top: 10px;
+	         color: #7f049b;
+	         margin-left: 100px;
+	         text-align: left;
+	    }
+	    footer{
+	    justify-content: center;
+	         margin: 40px;
+	         display: block;
+	         float: left;
+	         width: 1120px;
+		font-size: 12px;
+		text-align: right;
+		margin-right: 10px;
+		color: blue;
+		display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+	    }
+		
+	    section {
+                margin: 20px;
+		background: #c2f8f9;
+	    }
+            section b{
+                color: #a103c4;
+	    }
+	    
+	    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+form  { display: table;      }
+p     { display: table-row;  }
+label { display: table-cell; }
+input { display: table-cell; }
