@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import br.com.flf.jdbc.FilmeDao;
-import br.com.flf.jdbc.LivroDao;
 import br.com.flf.models.Filme;
 import br.com.flf.models.Livro;
 

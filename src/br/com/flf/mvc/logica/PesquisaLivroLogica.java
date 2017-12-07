@@ -10,7 +10,6 @@ import javax.persistence.Query;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import br.com.flf.jdbc.LivroDao;
 import br.com.flf.models.Livro;
 
 public class PesquisaLivroLogica implements Logica {
@@ -23,8 +22,9 @@ public class PesquisaLivroLogica implements Logica {
 //		LivroDao dao = new LivroDao(connection);
 //		List<Livro> livros = dao.getPesquisa(key);
 		EntityManager manager = (EntityManager) request.getAttribute("manager");
-		List<Livro>livros =  manager.createNativeQuery("SELECT * FROM  Livro WHERE titulo like '%"+key+"%';", Livro.class).getResultList();
+		//List<Livro>livros =  manager.createQuery("SELECT l FROM  Livro l WHERE l.titulo like '%"+key+"%'", Livro.class).getResultList();
 		
+		List<Livro>livros =  manager.createQuery("SELECT l FROM  Livro l WHERE lower(l.titulo) like lower(:search)", Livro.class).setParameter("search", "%"+key+"%").getResultList();
 		
 		// Guarda a lista no request
 		request.setAttribute("livros", livros);

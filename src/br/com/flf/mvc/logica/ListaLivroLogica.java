@@ -9,7 +9,6 @@ import javax.persistence.Persistence;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import br.com.flf.jdbc.LivroDao;
 import br.com.flf.models.Livro;
 
 public class ListaLivroLogica implements Logica {
@@ -24,13 +23,14 @@ public class ListaLivroLogica implements Logica {
 
 		
 		EntityManager manager = (EntityManager) request.getAttribute("manager");
-		List<Livro> livros =  manager.createNativeQuery("SELECT * FROM  Livro order by id asc;", Livro.class).getResultList();
 		
+		List<Livro> livros =  manager.createQuery("SELECT l FROM  Livro l order by l.titulo asc", Livro.class).getResultList();
 		
+		System.out.println("Passou!");
 		
 		// Guarda a lista no request
 		request.setAttribute("livros", livros);
-		return "WEB-INF/jsp/lista-livros.jsp";
+		return "WEB-INF/jsp/lista-livros-new.jsp";
 		
 	}
 
