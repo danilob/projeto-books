@@ -19,10 +19,12 @@ public class Livro {
 	@Column(length = 300)
     private String titulo;
 	
+	/** pay attention **/
     @ManyToOne(optional = false)
     @JoinColumn(name = "genero_id")
     private Genero genero;
     
+    /** pay attention **/
     @ManyToOne(optional = false)
     @JoinColumn(name = "editora_id")
     private Editora editora;

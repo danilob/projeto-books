@@ -49,7 +49,7 @@ public class AdicionaLivroLogica implements Logica {
 		novo.setEditora(edi);
 		novo.setGenero(gen);
 		novo.setAutores(autores);
-		
+		/** pay attention **/
 		manager.getTransaction().begin();
 		manager.persist(novo);
 		manager.getTransaction().commit();

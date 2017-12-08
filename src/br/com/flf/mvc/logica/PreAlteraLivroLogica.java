@@ -22,6 +22,7 @@ public class PreAlteraLivroLogica implements Logica {
 //		Connection connection = (Connection) request.getAttribute("connection");
 //		LivroDao dao = new LivroDao(connection);
 //		Livro result = dao.getLivros(id);
+		/** pay attention **/
 		EntityManager manager = (EntityManager) request.getAttribute("manager");
 		Livro result = manager.find(Livro.class, id);
 		request.setAttribute("record", result);

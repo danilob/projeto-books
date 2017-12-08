@@ -15,7 +15,7 @@ public class AdicionaGeneroLogica implements Logica {
 		String nome = request.getParameter("nome");
 		Genero gen = new Genero();
 		gen.setDescricao(nome);
-		
+		/** pay attention **/
 		EntityManager manager = (EntityManager) request.getAttribute("manager");
 		manager.getTransaction().begin();
 		manager.persist(gen);	

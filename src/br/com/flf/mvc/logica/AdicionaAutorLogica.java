@@ -19,7 +19,7 @@ public class AdicionaAutorLogica implements Logica {
 		String nome = request.getParameter("nome");
 		Autor aut = new Autor();
 		aut.setNome(nome);
-		
+		/** pay attention **/
 		EntityManager manager = (EntityManager) request.getAttribute("manager");
 		manager.getTransaction().begin();
 		manager.persist(aut);	
