@@ -29,6 +29,7 @@ public class livros extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		request.setCharacterEncoding("UTF-8");
 		String parametro = request.getParameter("logica");
 		String nomeDaClasse = "br.com.flf.mvc.logica." + parametro;
 		try {

@@ -26,7 +26,7 @@ public class PreAlteraLivroLogica implements Logica {
 		EntityManager manager = (EntityManager) request.getAttribute("manager");
 		Livro result = manager.find(Livro.class, id);
 		request.setAttribute("record", result);
-		return "WEB-INF/jsp/altera-livro.jsp";
+		return "WEB-INF/jsp/altera-livro-new.jsp";
 		
 	}
 

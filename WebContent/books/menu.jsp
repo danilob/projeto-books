@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%@page pageEncoding="UTF-8"%>
 	<div id="header">
 		<center>
 			<img src="<c:url value="/imagens/books-varios.png"/>"

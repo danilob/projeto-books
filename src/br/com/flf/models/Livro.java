@@ -94,6 +94,26 @@ public class Livro {
 		return res;
 		
 	}
+	
+	public boolean getAutor(long id) {
+		for (Autor elem : autores) {
+			if(id == elem.getId()) {
+				return true;
+			}
+	    }
+		return false;
+		
+	}
+	
+//	public void hasAutor(String id) {
+//		System.out.println("Entrou dados!"+id);
+////		for (Autor elem : autores) {
+////			if(elem.getId() ==Long.parseLong(id)) {
+////				return id;
+////			}
+////	    }
+////		return id+"error";
+//	}
     
 	
 }

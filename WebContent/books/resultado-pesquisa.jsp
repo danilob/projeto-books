@@ -29,9 +29,9 @@ Encontradas ${livros.size()} ocorrências! <br><br>
 	<c:forEach var="livro" items="${livros}">
 	<tr>
 		<td>${livro.titulo}</td>
-		<td>${livro.autores}</td>
-		<td>${livro.genero}</td>
-		<td>${livro.editora}</td>
+		<td>${livro.getNameAutores()}</td>
+		<td>${livro.genero.descricao}</td>
+		<td>${livro.editora.nome}</td>
 		<td>${livro.ano}</td>
 		<td><center>
 		<a href="livros?logica=PreAlteraLivroLogica&id=${livro.id}">Alterar</a> - 
